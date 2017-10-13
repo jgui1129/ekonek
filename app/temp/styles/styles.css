@@ -1666,6 +1666,7 @@ h2 {
 
 #contact-form {
 	background: url('../../assets/images/truck-container.png');
+	background-attachment: scroll;
 	background-attachment: fixed;
 	background-position: cover;
 	background-repeat: no-repeat;
