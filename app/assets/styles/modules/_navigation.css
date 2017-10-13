@@ -62,7 +62,7 @@
 
 			ul {
 				float: right;
-				transition: .5s;
+				/*transition: .5s;*/
 			}
 
 			ul li {
@@ -235,12 +235,9 @@
 
 				@mixin small {
 					background: url('../../assets/images/nav-background.png');
-					animation: 'slideInRight';
-					animation-duration: .5s;	
 					background-size: 250px;
 					background-repeat: no-repeat;
 					background-position: right; 
-
 				}
 			
 				@mixin extraSmall {
@@ -254,18 +251,18 @@
 
 			ul li {
 				display: block;
-				padding: 5px 20px;
+				padding: 3px 20px;
 				margin-left: auto;
 				margin-right: auto;
-				animation: 'slideInLeft';
-				animation-duration: .5s;
 
 			}
 
 			ul li a {
-				font-size: 20px;
+				font-size: 18px;
 
-
+				@mixin extraSmall {
+					font-size: 16px;
+				}
 			}
 
 		}

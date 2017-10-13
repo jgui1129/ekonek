@@ -752,8 +752,7 @@ h2 {
 
 #navigation nav .navigation-list ul {
 				float: right;
-				-webkit-transition: .5s;
-				transition: .5s;
+				/*transition: .5s;*/
 			}
 
 #navigation nav .navigation-list ul li {
@@ -974,10 +973,6 @@ h2 {
 
 #navigation.show-mobile-nav .navigation-list ul {
 					background: url('../../assets/images/nav-background.png');
-					-webkit-animation: 'slideInRight';
-					        animation: 'slideInRight';
-					-webkit-animation-duration: .5s;
-					        animation-duration: .5s;	
 					background-size: 250px;
 					background-repeat: no-repeat;
 					background-position: right
@@ -998,21 +993,22 @@ h2 {
 
 #navigation.show-mobile-nav .navigation-list ul li {
 				display: block;
-				padding: 5px 20px;
+				padding: 3px 20px;
 				margin-left: auto;
 				margin-right: auto;
-				-webkit-animation: 'slideInLeft';
-				        animation: 'slideInLeft';
-				-webkit-animation-duration: .5s;
-				        animation-duration: .5s;
 
 			}
 
 #navigation.show-mobile-nav .navigation-list ul li a {
-				font-size: 20px;
-
-
+				font-size: 18px;
 			}
+
+@media (max-width: 480px) {
+
+#navigation.show-mobile-nav .navigation-list ul li a {
+					font-size: 16px
+			}
+    }
 
 #hero {
 	background: url('../../assets/images/hero-background.png');
