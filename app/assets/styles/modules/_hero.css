@@ -15,7 +15,7 @@
 	}
 
 	@mixin iphoneSmall {
-		padding: 50px 0px;
+		padding: 0px 0px;
 	}
 
 	.welcome-header {
@@ -43,6 +43,11 @@
 		@mixin extraSmall {
 			width: 100%;
 			margin-top: 0px;
+		}
+
+		@mixin iphoneSmall {
+			padding-top: 80px;
+			padding-bottom: 80px;
 		}
 
 		h1 {

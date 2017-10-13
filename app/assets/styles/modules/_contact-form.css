@@ -1,6 +1,6 @@
 #contact-form {
+	background: rgba(227, 227, 227, 0.55);
 	background: url('../../assets/images/truck-container.png');
-	background-attachment: scroll;
 	background-attachment: fixed;
 	background-position: cover;
 	background-repeat: no-repeat;
@@ -23,10 +23,6 @@
 
 	}
 
-	.contact-div {
-		
-
-	}
 
 	.container-body {
 

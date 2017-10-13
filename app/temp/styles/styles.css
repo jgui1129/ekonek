@@ -1043,7 +1043,7 @@ h2 {
 @media (max-width: 318px) {
 
 #hero {
-		padding: 50px 0px
+		padding: 0px 0px
 
 
 }
@@ -1085,6 +1085,14 @@ h2 {
 #hero .welcome-header {
 			width: 100%;
 			margin-top: 0px
+	}
+    }
+
+@media (max-width: 318px) {
+
+#hero .welcome-header {
+			padding-top: 80px;
+			padding-bottom: 80px
 	}
     }
 
@@ -1665,8 +1673,8 @@ h2 {
 		}
 
 #contact-form {
+	background: rgba(227, 227, 227, 0.55);
 	background: url('../../assets/images/truck-container.png');
-	background-attachment: scroll;
 	background-attachment: fixed;
 	background-position: cover;
 	background-repeat: no-repeat;
@@ -1700,11 +1708,6 @@ h2 {
 		padding: 40px 10px
 }
     }
-
-#contact-form .contact-div {
-		
-
-	}
 
 @media (max-width: 768px) {
 
