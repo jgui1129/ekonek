@@ -1,0 +1,98 @@
+#downloads {
+	background: #f6f6f6;
+	padding: 30px;
+
+	@mixin extraSmall {
+		text-align: center;
+	}
+
+	.container-body {
+
+		@mixin small {
+			margin: 50px auto;
+		}
+	}
+
+	.kobena-select {
+		margin-bottom: 10px;
+
+		
+		@mixin small {
+			width: 60%;
+		}
+		@mixin extraSmall {
+			width: 80%;
+		}
+
+	}
+
+	.useful-links-form {
+		width: 50%;
+		display: inline-block;
+		float: left;
+		margin-bottom: 30px;
+
+		@mixin small {
+			width: 100%;
+			text-align: center;
+			display: block;
+		}
+
+		@mixin extraSmall {
+			width: 100%;
+			text-align: center;
+			display: block;
+			margin-bottom: 40px;
+		}
+
+		h2  {
+			margin-bottom: 30px;
+			}
+		p {
+		
+
+			width: 80%;
+			font-size: 18px;
+			margin-bottom: 50px;
+			color: $text-tertiary-color;
+
+			@mixin small {
+				width: 100%;
+			}
+		}
+	}
+
+	.quicklinks {
+		width: 40%;
+		float: left;
+		background: $text-primary-color;
+		padding: 30px 50px;
+		margin-top: -20px;
+
+		@mixin small {
+			width: 100%;
+			padding: 30px;
+			margin-top: 0;
+		}
+
+		@mixin extraSmall {
+			width: 100%;
+			padding: 50px 10px;
+
+		}
+
+		li {
+			margin-bottom: 3px;
+
+		}
+		a {
+			transition: .3s;
+			border-bottom: 2px solid $text-secondary-color;
+		}
+
+		a:hover {
+			padding-bottom: 3px;
+		}
+	}
+
+}

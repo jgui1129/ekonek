@@ -1,0 +1,39 @@
+
+/* Large Devices, Wide Screens */
+@define-mixin large {
+    @media (max-width: 1200px) {
+        @mixin-content;
+    }
+}
+
+/* Medium Devices, Desktops */
+@define-mixin medium {
+    @media (max-width: 995px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin betweenMedium {
+    @media (max-width: 950px) {
+        @mixin-content;
+    }
+}
+        
+/* Small Devices, Tablets */
+@define-mixin small {
+    @media (max-width: 768px) {
+        @mixin-content;
+    }
+}
+    
+/* Extra Small Devices, Phones */ 
+@define-mixin extraSmall {
+    @media (max-width: 480px) {
+        @mixin-content;
+    }   
+}
+
+
+
+
+

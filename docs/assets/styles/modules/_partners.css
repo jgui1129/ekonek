@@ -1,0 +1,38 @@
+#partners  {
+    margin-top: 150px;
+    background: #f6f6f6;
+
+    @mixin large {
+    	margin-top: 0px;
+    }
+
+    @mixin medium {
+    	margin-top: 50px;
+    }
+
+    @mixin small {
+    	margin-top: 0;
+    }
+
+    .container-body {
+
+    	 @mixin small {
+			margin-top: 50px;
+            margin-bottom: 50px;
+		}
+
+    	@mixin extraSmall {
+    		margin-top: 40px;
+    	}
+
+    }
+
+
+	h2 {
+		text-align: center;
+		font-weight: 700;
+		padding-top: 50px;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+	}
+}
