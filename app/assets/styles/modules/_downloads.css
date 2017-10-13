@@ -19,9 +19,11 @@
 		
 		@mixin small {
 			width: 60%;
+			padding-right: 10px;
 		}
 		@mixin extraSmall {
-			width: 80%;
+			width: 90%;
+			padding-right: 10px;
 		}
 
 	}

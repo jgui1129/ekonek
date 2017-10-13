@@ -16,9 +16,11 @@
 		
 		@mixin small {
 			width: 60%;
+			padding-right: 10px;
 		}
 		@mixin extraSmall {
-			width: 80%;
+			width: 90%;
+			padding-right: 10px;
 		}
 
 	}
@@ -91,7 +93,7 @@
 			@mixin medium {
 				position: absolute;
 				width: 200px;
-				right: 50px;
+				right:20px;
 			}
 
 			@mixin small {
@@ -111,7 +113,7 @@
 
 			@mixin medium {
 				position: absolute;
-				right: 150px;
+				right: 100px;
 				width: 200px;
 			}
 
@@ -140,7 +142,7 @@
 
 			@mixin medium {
 				position: absolute;
-				right: 100px;
+				right: 70px;
 				width: 200px;
 
 			}

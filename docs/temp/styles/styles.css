@@ -514,6 +514,8 @@ table {
 
 /* Extra Small Devices, Phones */
 
+/* Extra Small Devices, Phones */
+
 body {
 	font-family: 'Roboto',Arial, san-serif;
 /*
@@ -601,7 +603,7 @@ a {
 }
     }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
 
 .container-body {
 		padding-left: 0;
@@ -1032,7 +1034,16 @@ h2 {
 
 #hero {
 		text-align: center;
-		padding: 80px 50px
+		padding: 80px 30px
+
+
+}
+    }
+
+@media (max-width: 320px) {
+
+#hero {
+		padding: 50px 0px
 
 
 }
@@ -1073,7 +1084,7 @@ h2 {
 
 #hero .welcome-header {
 			width: 100%;
-			margin-top: 50px
+			margin-top: 0px
 	}
     }
 
@@ -1132,7 +1143,8 @@ h2 {
 
 #hero .welcome-header .kobena-select {
 				width: 60%;
-				margin-bottom: 20px
+				margin-bottom: 20px;
+				padding-right: 10px
 			
 		}
     }
@@ -1141,7 +1153,8 @@ h2 {
 
 #hero .welcome-header .kobena-select {
 				width: 100%;
-				margin-bottom: 20px
+				margin-bottom: 20px;
+				padding-right: 10px
 			
 		}
     }
@@ -1172,7 +1185,8 @@ h2 {
 @media (max-width: 768px) {
 
 #services .kobena-select {
-			width: 60%
+			width: 60%;
+			padding-right: 10px
 
 	}
     }
@@ -1180,7 +1194,8 @@ h2 {
 @media (max-width: 480px) {
 
 #services .kobena-select {
-			width: 80%
+			width: 90%;
+			padding-right: 10px
 
 	}
     }
@@ -1281,7 +1296,7 @@ h2 {
 #services .services-images img:nth-child(1) {
 				position: absolute;
 				width: 200px;
-				right: 50px
+				right:20px
 		}
     }
 
@@ -1310,7 +1325,7 @@ h2 {
 
 #services .services-images img:nth-child(2) {
 				position: absolute;
-				right: 150px;
+				right: 100px;
 				width: 200px
 		}
     }
@@ -1351,7 +1366,7 @@ h2 {
 
 #services .services-images img:nth-child(3) {
 				position: absolute;
-				right: 100px;
+				right: 70px;
 				width: 200px
 		}
     }
@@ -1476,13 +1491,20 @@ h2 {
 		margin-right: 50px;
 	}
 
+@media (max-width: 995px) {
+
+#about-us .about-us-div {
+			text-align: center;
+			margin-right: 10px
+	}
+    }
+
 @media (max-width: 768px) {
 
 #about-us .about-us-div {
 			width: 100%;
 			float: none;
-			padding: 20px;
-			text-align: center
+			padding: 20px
 	}
     }
 
@@ -1541,7 +1563,8 @@ h2 {
 @media (max-width: 768px) {
 
 #downloads .kobena-select {
-			width: 60%
+			width: 60%;
+			padding-right: 10px
 
 	}
     }
@@ -1549,7 +1572,8 @@ h2 {
 @media (max-width: 480px) {
 
 #downloads .kobena-select {
-			width: 80%
+			width: 90%;
+			padding-right: 10px
 
 	}
     }
@@ -1665,7 +1689,14 @@ h2 {
 @media (max-width: 768px) {
 
 #contact-form {
-		padding: 40px 40px
+		padding: 40px 10px
+}
+    }
+
+@media (max-width: 320px) {
+
+#contact-form {
+		padding: 40px 10px
 }
     }
 
@@ -1686,6 +1717,8 @@ h2 {
 		width: 50%;
 		float: left;
 		padding: 30px 50px;
+		-webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
+		        box-shadow: 0 0 20px rgba(0,0,0,.4);
 	}
 
 @media (max-width: 1200px) {
@@ -1791,15 +1824,39 @@ h2 {
 		    -ms-flex-align: center;
 		        align-items: center;
 		padding: 50px 60px;
+		-webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
+		        box-shadow: 0 0 20px rgba(0,0,0,.4);
 
 	}
+
+@media (max-width: 995px) {
+
+#contact-form .contact-form-mail {
+			padding: 50px 30px
+
+	}
+    }
+
+@media (max-width: 768px) {
+
+#contact-form .contact-form-mail {
+			padding: 50px 40px
+
+	}
+    }
 
 @media (max-width: 480px) {
 
 #contact-form .contact-form-mail {
-			padding: 50px 30px;
-			-webkit-box-shadow: 0 0 20px rgba(0,0,0,.3);
-			        box-shadow: 0 0 20px rgba(0,0,0,.3)
+			padding: 50px 30px
+
+	}
+    }
+
+@media (max-width: 320px) {
+
+#contact-form .contact-form-mail {
+			padding: 50px 15px
 
 	}
     }

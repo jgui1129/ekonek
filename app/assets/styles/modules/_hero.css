@@ -11,7 +11,11 @@
 
 	@mixin extraSmall {
 		text-align: center;
-		padding: 80px 50px;
+		padding: 80px 30px;
+	}
+
+	@mixin iphoneSmall {
+		padding: 50px 0px;
 	}
 
 	.welcome-header {
@@ -38,7 +42,7 @@
 
 		@mixin extraSmall {
 			width: 100%;
-			margin-top: 50px;
+			margin-top: 0px;
 		}
 
 		h1 {
@@ -77,11 +81,13 @@
 			@mixin small {
 				width: 60%;
 				margin-bottom: 20px;
+				padding-right: 10px;
 			}
 
 			@mixin extraSmall {
 				width: 100%;
 				margin-bottom: 20px;
+				padding-right: 10px;
 			}
 			
 		}

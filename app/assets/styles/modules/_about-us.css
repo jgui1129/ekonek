@@ -43,11 +43,17 @@
 		float: right;
 		margin-right: 50px;
 
+		@mixin medium {
+			text-align: center;
+			margin-right: 10px;
+
+		}
+
+
 		@mixin small {
 			width: 100%;
 			float: none;
 			padding: 20px;
-			text-align: center;
 		}
 
 		h2 {

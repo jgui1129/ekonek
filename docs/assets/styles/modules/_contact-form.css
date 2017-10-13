@@ -14,7 +14,12 @@
 	}
 
 	@mixin small {
-		padding: 40px 40px;
+		padding: 40px 10px;
+	}
+
+	@mixin iphoneSmall {
+		padding: 40px 10px;
+
 	}
 
 	.contact-div {
@@ -34,6 +39,7 @@
 		width: 50%;
 		float: left;
 		padding: 30px 50px;
+		box-shadow: 0 0 20px rgba(0,0,0,.4);
 
 		@mixin large {
 			padding: 30px 40px;
@@ -52,6 +58,7 @@
 		@mixin extraSmall {
 			padding: 30px 40px;
 			text-align: center;
+
 		}
 	}
 	.contact-form-mail {
@@ -62,7 +69,6 @@
 		@mixin small {
 			width: 100%;
 			float: none;
-
 		}
 
 	}
@@ -122,10 +128,22 @@
 	.contact-form-mail {
 		align-items: center;
 		padding: 50px 60px;
+		box-shadow: 0 0 20px rgba(0,0,0,.4);
+
+		@mixin medium {
+			padding: 50px 30px;
+		}
+
+		@mixin small {
+			padding: 50px 40px;
+		}
 
 		@mixin extraSmall {
 			padding: 50px 30px;
-			box-shadow: 0 0 20px rgba(0,0,0,.3);
+		}
+
+		@mixin iphoneSmall {
+			padding: 50px 15px;
 		}
 
 
