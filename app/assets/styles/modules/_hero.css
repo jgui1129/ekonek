@@ -1,0 +1,91 @@
+#hero {
+	background: url('../../assets/images/hero-background.png');
+	background-position: center;
+	background-size: cover;
+	padding: 100px 50px;
+
+
+	@mixin small {
+		text-align: center;
+	}
+
+	@mixin extraSmall {
+		text-align: center;
+		padding: 80px 50px;
+	}
+
+	.welcome-header {
+		margin-top: 130px;
+		padding: 30px;
+		background: rgba(0,0,0,.6);
+		color: $text-primary-color;
+		width: 40%;
+
+		@mixin large {
+			width: 50%;
+		}
+
+		@mixin medium {
+			width: 70%;
+		}
+
+		@mixin small {
+			width: 100%;
+			padding: 30px 25px;
+			margin-top: 40px;
+
+		}
+
+		@mixin extraSmall {
+			width: 100%;
+			margin-top: 50px;
+		}
+
+		h1 {
+			font-size: 20px;
+			font-weight: 700;
+			letter-spacing: 1.5px;
+			margin-bottom: 20px;
+
+			@mixin small {
+				font-size: 25px;
+			}
+
+			@mixin extraSmall {
+				font-size: 25px;
+			}
+
+
+
+		}
+
+		p {
+			margin-bottom: 20px;
+
+			@mixin small {
+				font-size: 16px;
+			}
+
+			@mixin extraSmall {
+				font-size: 15px;
+			}
+
+		}
+	
+		.kobena-select {
+
+			@mixin small {
+				width: 60%;
+				margin-bottom: 20px;
+			}
+
+			@mixin extraSmall {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			
+		}
+	}
+
+
+}
