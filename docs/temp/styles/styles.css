@@ -974,8 +974,8 @@ h2 {
 
 #navigation.show-mobile-nav .navigation-list ul {
 					background: url('../../assets/images/nav-background.png');
-					-webkit-animation: 'fadeInUp';
-					        animation: 'fadeInUp';
+					-webkit-animation: 'slideInRight';
+					        animation: 'slideInRight';
 					-webkit-animation-duration: .5s;
 					        animation-duration: .5s;	
 					background-size: 250px;

@@ -235,7 +235,7 @@
 
 				@mixin small {
 					background: url('../../assets/images/nav-background.png');
-					animation: 'fadeInUp';
+					animation: 'slideInRight';
 					animation-duration: .5s;	
 					background-size: 250px;
 					background-repeat: no-repeat;
