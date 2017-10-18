@@ -1,25 +1,5 @@
 body {
 	font-family: 'Roboto',Arial, san-serif;
-/*
-	@mixin large {
-		background: brown;
-	}
-
-	@mixin betweenMedium {
-		background: blue;
-	}
-
-	@mixin medium {
-		background: yellow;
-	}
-
-	@mixin small {
-		background: green;
-	}
-
-	@mixin extraSmall {
-		background: red;
-	}*/
 }
 
 img {
@@ -49,6 +29,12 @@ a {
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
+
+.sticky {
+	position: fixed;
+    top: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
 
 .container {
 	max-width: 1100px;
@@ -89,8 +75,9 @@ a {
 	background: transparent;
 	color: $text-primary-color;
 	padding: 10px 10px;
-	padding-right: 80px;
+	margin-bottom: 10px;
 	text-align: left;
+	width: 100%;
 }
 
 h2 {

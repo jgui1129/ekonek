@@ -2,6 +2,17 @@
 	position: relative;
 	padding: 0 20px;
 
+	#image-top, #image-middle, #image-bottom {
+		opacity: 0;
+	}
+	
+	select {
+		font-family: 'FontAwesome', 'Raleway';
+		color: #125397;
+		width: 80%;
+	}
+
+
 	.container-body {
 		margin-bottom: 0;
 	}

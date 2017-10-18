@@ -27,7 +27,7 @@
 		<nav>
 			<div class="container">
 				<div class="nav-logo">
-					<img src="assets/images/logo.png" />
+					<img class="logo" src="assets/images/logo.png" />
 				</div>
 				<div class="navigation-list">
 					<div class="nav-mobile">
@@ -53,11 +53,18 @@
 				<h1>Welcome to Ekonek</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-				<select class="kobena-select">
-					<option>Imports</option>
+				<select class="kobena-select" id="quicklaunch" data-source="quicklaunch">
+					<option value="imports"> &#xf097; Imports</option>
+					<option value="exports"> &#xf097; Exports</option>
+					<option value="services"> &#xf097; Specialized Services</option>
 				</select>
-				<select class="kobena-select">
-					<option>Imports</option>
+				<select class="kobena-select" id="quicklaunchValue">
+					<option disabled selected> &#xf097; Select item below</option>
+					<option value='http://www.ekonek.com/autoip'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Import Permit System</option>
+					<option value='http://www.ekonek.com/ezts'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Zone Transfer System</option>
+					<option value='http://www.ekonek.com/aipscadc'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Transit Admission Permit System</option>
+					<option value='http://www.ekonek.com/gms'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Gatepass Management System</option>
+					<option value='http://www.ekonek.com/tafsweb-v2/'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Trade Automation and Facilitation System</option>
 				</select>
 			</div>			
 		</div>
@@ -71,17 +78,24 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 				<h3>VASP Quick Launch</h3>
-				<select class="kobena-select text-secondary">
-					<option>Imports</option>
+				<select class="kobena-select" id="quicklaunch_middle" data-source="quicklaunch_middle">
+					<option value="imports"> &#xf097; Imports</option>
+					<option value="exports"> &#xf097; Exports</option>
+					<option value="services"> &#xf097; Specialized Services</option>
 				</select>
-				<select class="kobena-select text-secondary">
-					<option>Imports</option>
+				<select class="kobena-select" id="quicklaunchValue_middle">
+					<option disabled selected> &#xf097; Select item below</option>
+					<option value='http://www.ekonek.com/autoip'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Import Permit System</option>
+					<option value='http://www.ekonek.com/ezts'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Zone Transfer System</option>
+					<option value='http://www.ekonek.com/aipscadc'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Transit Admission Permit System</option>
+					<option value='http://www.ekonek.com/gms'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Gatepass Management System</option>
+					<option value='http://www.ekonek.com/tafsweb-v2/'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Trade Automation and Facilitation System</option>
 				</select>
 			</div>
 			<div class="services-images clearfix">
-				<img src="assets/images/services-forklift.jpg" />
-				<img src="assets/images/services-trucks.png" />
-				<img src="assets/images/services-delivery-truck.jpg" />
+				<img id="image-top" src="assets/images/services-forklift.jpg"/>
+				<img id="image-middle" src="assets/images/services-trucks.png" />
+				<img id="image-bottom" src="assets/images/services-delivery-truck.jpg" />
 			</div>			
 		</div>
 	</section>
@@ -134,8 +148,8 @@
 		</div>
 	</section>
 
-	<section id="contact-form">
-		<div class="container container-body">
+	<section id="contact-form" data-parallax="scroll" data-parallax="scroll" data-image-src="assets/images/truck-container.png">
+		<div class="container container-body parallax-window" >
 			<div class="contact-div clearfix">
 				<div class="contact-form-details">
 					<div class="contact-form-header">
@@ -224,6 +238,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="assets/js/waypoint.js"></script>
+<script src="assets/js/parallax.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

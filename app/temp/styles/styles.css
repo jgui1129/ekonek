@@ -518,26 +518,6 @@ table {
 
 body {
 	font-family: 'Roboto',Arial, san-serif;
-/*
-	@mixin large {
-		background: brown;
-	}
-
-	@mixin betweenMedium {
-		background: blue;
-	}
-
-	@mixin medium {
-		background: yellow;
-	}
-
-	@mixin small {
-		background: green;
-	}
-
-	@mixin extraSmall {
-		background: red;
-	}*/
 }
 
 img {
@@ -572,6 +552,13 @@ a {
 .clearfix { display: block; }
 
 /* close commented backslash hack */
+
+.sticky {
+	position: fixed;
+    top: 0;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.5);
+            box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
 
 .container {
 	max-width: 1100px;
@@ -623,8 +610,9 @@ a {
 	background: transparent;
 	color: white;
 	padding: 10px 10px;
-	padding-right: 80px;
+	margin-bottom: 10px;
 	text-align: left;
+	width: 100%;
 }
 
 h2 {
@@ -667,6 +655,24 @@ h2 {
 
 }
 
+.fadeUpImage {
+	-webkit-animation: fadeInUp;
+	        animation: fadeInUp;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+#navigation {
+    background: white;
+    z-index: 99;
+    width: 100%;
+    -webkit-transition: .5s;
+    transition: .5s;
+
+}
+
 #navigation nav {
 		padding: 5px 0;
 	    
@@ -688,6 +694,8 @@ h2 {
 
 #navigation nav .nav-logo img {
 				width: 250px;
+				-webkit-transition: .5s;
+				transition: .5s;
 
 			}
 
@@ -1012,19 +1020,57 @@ h2 {
 			}
     }
 
+#navigation.sticky .logo {
+				width: 200px;
+
+			}
+
+@media (max-width: 1200px) {
+
+#navigation.sticky .logo {
+					padding-left: 10px 20px
+
+			}
+    }
+
+@media (max-width: 995px) {
+
+#navigation.sticky .logo {
+					padding: 10px 20px
+
+			}
+    }
+
 #hero {
 	background: url('../../assets/images/hero-background.png');
 	background-position: center;
 	background-size: cover;
-	padding: 100px 50px;
+	position: relative;
+	padding: 1px 50px 100px 50px;
 
 
 }
 
+#hero select {
+		font-family: 'FontAwesome', 'Raleway';
+		background: rgba(0,0,0,.3);
+		text-shadow: 2px 2px 2px rgba(0,0,0,1);
+	}
+
+@media (max-width: 995px) {
+
+#hero {
+		padding: 30px 50px 100px 50px
+
+
+}
+    }
+
 @media (max-width: 768px) {
 
 #hero {
-		text-align: center
+		text-align: center;
+		padding: 50px 50px 100px 50px
 
 
 }
@@ -1051,7 +1097,7 @@ h2 {
 
 #hero .welcome-header {
 		margin-top: 130px;
-		padding: 30px;
+		padding: 40px;
 		background: rgba(0,0,0,.6);
 		color: white;
 		width: 40%;
@@ -1167,11 +1213,56 @@ h2 {
 		}
     }
 
+#hero.sticky-active {
+
+	padding: 100px 50px 100px 50px;
+}
+
+@media (max-width: 995px) {
+
+#hero.sticky-active {
+		padding: 100px 50px 100px 50px
+}
+    }
+
+@media (max-width: 768px) {
+
+#hero.sticky-active {
+		text-align: center;
+		padding: 150px 50px 80px 50px
+}
+    }
+
+@media (max-width: 480px) {
+
+#hero.sticky-active {
+		text-align: center;
+		padding: 150px 30px 50px 30px
+}
+    }
+
+@media (max-width: 318px) {
+
+#hero.sticky-active {
+		padding: 80px 0px 0px 0px
+}
+    }
+
 #services {
 	position: relative;
 	padding: 0 20px;
 
 }
+
+#services #image-top, #services #image-middle, #services #image-bottom {
+		opacity: 0;
+	}
+
+#services select {
+		font-family: 'FontAwesome', 'Raleway';
+		color: #125397;
+		width: 80%;
+	}
 
 #services .container-body {
 		margin-bottom: 0;
@@ -1548,6 +1639,18 @@ h2 {
 
 }
 
+#downloads select {
+		font-family: 'FontAwesome', 'Raleway';
+		width: 70%;
+	}
+
+@media (max-width: 768px) {
+
+#downloads select {
+			width: 100%
+	}
+    }
+
 @media (max-width: 480px) {
 
 #downloads {
@@ -1638,6 +1741,8 @@ h2 {
 		background: white;
 		padding: 30px 50px;
 		margin-top: -20px;
+		-webkit-box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+		        box-shadow: 1px 1px 20px rgba(0,0,0,.2);
 	}
 
 @media (max-width: 768px) {
@@ -1673,11 +1778,11 @@ h2 {
 		}
 
 #contact-form {
-	background: rgba(227, 227, 227, 0.55);
+/*	background: rgba(227, 227, 227, 0.55);
 	background: url('../../assets/images/truck-container.png');
 	background-attachment: fixed;
 	background-position: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	padding: 50px 150px;
 }
 
@@ -2239,3 +2344,4 @@ h2 {
 .announcement .news-announcement-bottom p {
 			display: inline-block;
 		}
+
