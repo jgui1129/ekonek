@@ -1,7 +1,12 @@
 #navigation {
+    background: white;
+    z-index: 99;
+    width: 100%;
+    transition: .5s;
 
 	nav {
 		padding: 5px 0;
+		transition: .5s;
 
 		.nav-logo {
 			display: inline-block;
@@ -14,6 +19,7 @@
 
 			img {
 				width: 250px;
+				transition: .5s;
 
 
 				@mixin large {
@@ -30,6 +36,7 @@
 
 			display: inline-block;
 			padding: 20px;
+			
 
 				@mixin large {
 					right: 0;
@@ -268,3 +275,23 @@
 		}
 
 }
+
+#navigation.sticky {
+
+
+			.logo {
+				width: 200px;
+
+				@mixin large {
+					padding-left: 10px 20px;	
+				}
+				
+				@mixin medium {
+					padding: 10px 20px;	
+				}
+
+			}
+
+}
+
+

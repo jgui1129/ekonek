@@ -3,6 +3,7 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
+@import "base/_animation";
 @import "modules/_navigation";
 @import "modules/_hero";
 @import "modules/_services";
@@ -12,3 +13,4 @@
 @import "modules/_contact-form";
 @import "modules/_contact-details";
 @import "modules/_announcement";
+

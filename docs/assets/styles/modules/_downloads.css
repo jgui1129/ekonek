@@ -2,6 +2,14 @@
 	background: #f6f6f6;
 	padding: 30px;
 
+	select {
+		font-family: 'FontAwesome', 'Raleway';
+		width: 70%;
+		@mixin small {
+			width: 100%;
+		}
+	}
+
 	@mixin extraSmall {
 		text-align: center;
 	}
@@ -70,6 +78,7 @@
 		background: $text-primary-color;
 		padding: 30px 50px;
 		margin-top: -20px;
+		box-shadow: 1px 1px 20px rgba(0,0,0,.2);
 
 		@mixin small {
 			width: 100%;
