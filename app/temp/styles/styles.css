@@ -675,6 +675,8 @@ h2 {
 
 #navigation nav {
 		padding: 5px 0;
+		-webkit-transition: .5s;
+		transition: .5s;
 	    
 
 	}

@@ -33,26 +33,28 @@
 					<div class="nav-mobile">
                         <div class="nav-mobile-middle"></div>
                     </div>
-					<ul>
-						<li><a href="#" class="nav-home">Home</a></li>
-						<li><a href="#" class="nav-services">What We Do</a></li>
-						<li><a href="#" class="nav-partners">Partners</a></li>
-						<li><a href="#" class="nav-about">Who We Are</a></li>
-						<li><a href="#" class="nav-links">Useful Links</a></li>
-						<li><a href="#" class="nav-contact">Contact Us</a></li>
+					<ul >
+						<li><a data-scroll href="#homepage-section" id="hero-link" class="nav-home">Home</a></li>
+						<li><a data-scroll href="#services-section" id="services-link" class="nav-services">What We Do</a></li>
+						<li><a data-scroll href="#partners-section" id="partners-link" class="nav-partners">Partners</a></li>
+						<li><a data-scroll href="#about-us-section" id="about-us-link" class="nav-about">Who We Are</a></li>
+						<li><a data-scroll href="#download-page-section" id="download-link" class="nav-links">Useful Links</a></li>
+						<li><a data-scroll href="#contact-details-section" id="contact-details-link" class="nav-contact">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
-
+		
 		</nav>
 	</section>
 
-	<section id="hero">
+	<div id="homepage-section"></div>
+	<section id="hero" data-matching-link="#hero-link">
 		<div class="container">
 			<div class="welcome-header">
 				<h1>Welcome to Ekonek</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				
 				<select class="kobena-select" id="quicklaunch" data-source="quicklaunch">
 					<option value="imports"> &#xf097; Imports</option>
 					<option value="exports"> &#xf097; Exports</option>
@@ -66,12 +68,14 @@
 					<option value='http://www.ekonek.com/gms'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Gatepass Management System</option>
 					<option value='http://www.ekonek.com/tafsweb-v2/'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Trade Automation and Facilitation System</option>
 				</select>
+				<div id="services-section"></div>
 			</div>			
 		</div>
-
+	
 	</section>
 
-	<section id="services">
+	
+	<section id="services" data-matching-link="#services-link">
 		<div class="container container-body clearfix">
 			<div class="services-left clearfix" id="services-left">
 				<h2>What we do</h2>
@@ -84,7 +88,7 @@
 					<option value="services"> &#xf097; Specialized Services</option>
 				</select>
 				<select class="kobena-select" id="quicklaunchValue_middle">
-					<option disabled selected> &#xf097; Select item below</option>
+					<option disabled selected> &#xf103; Select item below</option>
 					<option value='http://www.ekonek.com/autoip'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Import Permit System</option>
 					<option value='http://www.ekonek.com/ezts'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Zone Transfer System</option>
 					<option value='http://www.ekonek.com/aipscadc'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Electronic Transit Admission Permit System</option>
@@ -92,23 +96,29 @@
 					<option value='http://www.ekonek.com/tafsweb-v2/'><i class="fa fa-hashtag" aria-hidden="true"></i> &#xf097; Trade Automation and Facilitation System</option>
 				</select>
 			</div>
+			
 			<div class="services-images clearfix">
 				<img id="image-top" src="assets/images/services-forklift.jpg"/>
 				<img id="image-middle" src="assets/images/services-trucks.png" />
 				<img id="image-bottom" src="assets/images/services-delivery-truck.jpg" />
 			</div>			
 		</div>
-	</section>
-
-	<section id="partners">
-		<div class="container container-body">
-			<h2>Our partners</h2>
-			<img src="assets/images/partners.png">
-		</div>
 		
 	</section>
 
-	<section id="about-us">
+	<div id="partners-section"></div>
+	<section id="partners" data-matching-link="#partners-link">
+
+		<div class="container clearfix container-body">
+			<h2>Our partners</h2>
+			<img src="assets/images/partners.png">
+
+		</div>
+	<div id="about-us-section"></div>	
+	</section>
+
+	
+	<section id="about-us" data-matching-link="#about-us-link">
 		<div class="container container-body">
 			<div class="about-us-image">
 				<img src="assets/images/handshake.jpg" />
@@ -118,20 +128,29 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 			</div>
+			<div id="download-page-section"></div>
 		</div>
 
 	</section>
-
-	<section id="downloads">
+	
+	
+	<section id="downloads" data-matching-link="#download-link">
 		<div class="container container-body clearfix">
 			<div class="useful-links-form">
 				<h2>Useful Links</h2>
 				<p>Select from the options below links to downloadable files and forms</p>
-				<select class="kobena-select text-secondary">
-					<option>BOC e2m Customs</option>
+				<select class="kobena-select text-secondary" id="download_forms">
+					<option value="vasp"> &#xf097; E-Konek VASP</option>
+					<option value="e2m"> &#xf097; BOC e2m Customs</option>
+					<option value="aeds"> &#xf097; AEDS - Automated Export Document System</option>
+					<option value="ppa"> &#xf097; VASP PPA</option>
+					<option value="ezts"> &#xf097; eZTS - PEZA electronic Zone Transfer System</option>
+					<option value="balikbayan"> &#xf097; e-Balikbayan System</option>
 				</select>
-				<select class="kobena-select text-secondary">
-					<option>CPRS Forms</option>
+				<select class="kobena-select text-secondary" id="download_forms_target">
+					<option disabled selected> &#xf103; Select item below</option>
+					<option value='http://www.ekonek.com/E-Konek%20VASP%20Enrollment%20Form.doc'> &#xf097; VASP Enrollment Form</option>
+					<option value='http://www.ekonek.com/VASP%20Prepayment%20Training%20Module.pdf'> &#xf097; VASP Prepayment Training Module</option>
 				</select>
 			</div>
 			<div class="quicklinks clearfix">
@@ -148,7 +167,8 @@
 		</div>
 	</section>
 
-	<section id="contact-form" data-parallax="scroll" data-parallax="scroll" data-image-src="assets/images/truck-container.png">
+	<div id="contact-details-section"></div>
+	<section id="contact-form" data-parallax="scroll" data-image-src="assets/images/truck-container.png" data-matching-link="#contact-details-link">
 		<div class="container container-body parallax-window" >
 			<div class="contact-div clearfix">
 				<div class="contact-form-details">
@@ -196,7 +216,7 @@
 	</section>
 
 
-	<footer id="contact-details">
+	<footer id="contact-details" data-matching-link="#contact-details-link">
 		<div class="container container-body clearfix">
 			<div class="column-medium-3">
 				<img class="logo" src="assets/images/logo.png">
@@ -239,6 +259,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="assets/js/waypoint.js"></script>
 <script src="assets/js/parallax.js"></script>
+<script src="assets/js/smooth-scroll.js"></script>
 <script src="assets/js/app.js"></script>
+<!-- <script type="text/javascript" src="temp/scripts/bundle.js"></script> -->
 </body>
 </html>
