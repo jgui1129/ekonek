@@ -696,6 +696,7 @@ h2 {
 
 #navigation nav .nav-logo img {
 				width: 250px;
+				cursor: pointer;
 				-webkit-transition: .5s;
 				transition: .5s;
 
@@ -716,6 +717,11 @@ h2 {
 
 			}
     }
+
+#navigation nav .nav-logo img:hover {
+				-webkit-transform: scale(1.05);
+				        transform: scale(1.05);
+			}
 
 #navigation nav .navigation-list {
 

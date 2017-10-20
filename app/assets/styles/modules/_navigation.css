@@ -19,6 +19,7 @@
 
 			img {
 				width: 250px;
+				cursor: pointer;
 				transition: .5s;
 
 
@@ -30,6 +31,10 @@
 					padding: 10px 30px;	
 				}
 
+			}
+
+			img:hover {
+				transform: scale(1.05);
 			}
 		}
 		.navigation-list {
