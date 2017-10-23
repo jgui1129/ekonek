@@ -1,9 +1,6 @@
 $(document).ready(function() {
 
-     setTimeout(function(){
-          $("#cssload-pgloading").fadeOut("slow");     
-     },1000)
-     
+     $("#cssload-pgloading").fadeOut("slow");     
 
      var scroll = new SmoothScroll('a[href*="#"]',{
        speed: 800
