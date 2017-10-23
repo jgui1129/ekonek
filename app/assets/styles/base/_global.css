@@ -57,7 +57,7 @@ a {
 		padding-left: 30px;
 	}
 
-	@mixin iphoneSmall {
+	@mixin small {
 		padding-left: 0;
 		padding-right: 0;
 	}

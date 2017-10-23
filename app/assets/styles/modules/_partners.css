@@ -35,4 +35,25 @@
 		margin-bottom: 50px;
 		text-transform: uppercase;
 	}
+
+    .site-partners-logo {
+        text-align: center;
+        
+        img {
+            width: 130px;
+            margin: 20px;
+            transition: .3s;
+            opacity: .7;
+
+            @mixin small {
+                width: 70px;
+            }
+        }
+
+        img:hover{
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+    }
 }

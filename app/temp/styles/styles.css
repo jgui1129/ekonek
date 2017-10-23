@@ -590,7 +590,7 @@ a {
 }
     }
 
-@media (max-width: 318px) {
+@media (max-width: 768px) {
 
 .container-body {
 		padding-left: 0;
@@ -1262,10 +1262,6 @@ h2 {
 
 }
 
-#services #image-top, #services #image-middle, #services #image-bottom {
-		opacity: 0;
-	}
-
 #services select {
 		font-family: 'FontAwesome', 'Raleway';
 		color: #125397;
@@ -1544,6 +1540,32 @@ h2 {
 		margin-bottom: 50px;
 		text-transform: uppercase;
 	}
+
+#partners .site-partners-logo {
+        text-align: center;
+
+    }
+
+#partners .site-partners-logo img {
+            width: 130px;
+            margin: 20px;
+            -webkit-transition: .3s;
+            transition: .3s;
+            opacity: .7;
+        }
+
+@media (max-width: 768px) {
+
+#partners .site-partners-logo img {
+                width: 70px
+        }
+    }
+
+#partners .site-partners-logo img:hover{
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+            opacity: 1;
+        }
 
 @media (max-width: 768px) {
 
@@ -1825,7 +1847,7 @@ h2 {
 @media (max-width: 768px) {
 
 #contact-form .container-body {
-			margin: 50px auto
+			margin: 50px 0
 	}
     }
 

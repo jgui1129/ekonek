@@ -27,7 +27,7 @@
 	.container-body {
 
 		@mixin small {
-			margin: 50px auto;
+			margin: 50px 0;
 		}
 	}
 

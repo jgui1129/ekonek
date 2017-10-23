@@ -1,10 +1,6 @@
 #services {
 	position: relative;
 	padding: 0 20px;
-
-	#image-top, #image-middle, #image-bottom {
-		opacity: 0;
-	}
 	
 	select {
 		font-family: 'FontAwesome', 'Raleway';
