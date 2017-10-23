@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
-var scroll = new SmoothScroll('a[href*="#"]',{
-  speed: 800
-});
+     $("#cssload-pgloading").fadeOut("slow");
+
+     var scroll = new SmoothScroll('a[href*="#"]',{
+       speed: 800
+     });
 
      $('.nav-mobile').on('click',function(){
 	     $('.nav-mobile').toggleClass('nav-mobile-close');
@@ -15,14 +17,140 @@ var scroll = new SmoothScroll('a[href*="#"]',{
 
 	  	if (direction == 'down') {
 		  	$("#navigation").addClass('sticky');
-		    $("#hero").addClass('sticky-active');	
+		     $("#hero").addClass('sticky-active');
+               
 	  	}else {
 	  		$("#navigation").removeClass('sticky');
-		    $("#hero").removeClass('sticky-active');
+               $("#hero").removeClass('sticky-active');
 	  	}
 	    
 	  }
 	})
+
+     var waypoint_hero = new Waypoint({
+       element: document.getElementById('homepage-section'),
+       handler: function(direction) {
+          if (direction == 'down') {
+               waypoint_navigation("hero");     
+          }  
+       },offset: '10%'
+     });
+
+     var waypoint_hero_up = new Waypoint({
+       element: document.getElementById('homepage-section'),
+       handler: function(direction) {
+          if (direction == 'up') {
+               waypoint_navigation("hero");     
+          }  
+       },offset: '-40%'
+     })
+     
+     var waypoint_services = new Waypoint({
+       element: document.getElementById('services-section'),
+       handler: function(direction) {
+          if (direction == 'down') {
+               waypoint_navigation("services");     
+          }  
+       },offset: '10%'
+     })
+
+     var waypoint_services_up = new Waypoint({
+       element: document.getElementById('services-section'),
+       handler: function(direction) {
+          if (direction == 'up') {
+               waypoint_navigation("services");     
+          }  
+       },offset: '-40%'
+     })
+
+     var waypoint_partners = new Waypoint({
+       element: document.getElementById('partners-section'),
+       handler: function(direction) {
+          if (direction == 'down'){
+               waypoint_navigation("partners");     
+          }
+       },offset: '10%'
+     })
+
+     var waypoint_partners_up = new Waypoint({
+       element: document.getElementById('partners-section'),
+       handler: function(direction) {
+          if (direction == 'up') {
+               waypoint_navigation("partners");     
+          }
+       },offset: '-40%'
+     })
+
+     var waypoint_about = new Waypoint({
+       element: document.getElementById('about-us-section'),
+       handler: function(direction) {
+          if (direction == 'down') {
+               waypoint_navigation("about");     
+          }  
+       },offset: '10%'
+     })
+
+     var waypoint_about_up = new Waypoint({
+       element: document.getElementById('about-us-section'),
+       handler: function(direction) {
+          if (direction == 'up') {
+               waypoint_navigation("about");     
+          }  
+       },offset: '-40%'
+     })
+
+     var waypoint_download = new Waypoint({
+       element: document.getElementById('download-page-section'),
+       handler: function(direction) {
+          if (direction == 'down') {
+               waypoint_navigation("download");     
+          }  
+       },offset: '10%'
+     })
+
+     var waypoint_download_up = new Waypoint({
+       element: document.getElementById('download-page-section'),
+       handler: function(direction) {
+          if (direction == 'up') {
+               waypoint_navigation("download");     
+          }  
+       },offset: '-40%'
+     })
+
+     var waypoint_contact = new Waypoint({
+       element: document.getElementById('contact-details-section'),
+       handler: function(direction) {
+          if (direction == 'down') {
+               waypoint_navigation("contact");     
+          }  
+       },offset: '10%'
+     })
+
+     var waypoint_contact_up = new Waypoint({
+       element: document.getElementById('contact-details-section'),
+       handler: function(direction) {
+          if (direction == 'up') {
+               waypoint_navigation("contact");     
+          }  
+       },offset: '-40%'
+     })
+     function waypoint_navigation(section_id){
+          $('.nav-link').removeClass('active');
+
+          if (section_id == 'hero') {
+               $("#hero-link").addClass('active');
+          }else if (section_id == 'services'){
+               $("#services-link").addClass('active');
+          }else if (section_id == 'partners'){
+               $("#partners-link").addClass('active');
+          }else if (section_id == 'about'){
+               $("#about-us-link").addClass('active');
+          }else if (section_id == 'download'){
+               $("#download-link").addClass('active');
+          }else if (section_id == 'contact'){
+               $("#contact-details-link").addClass('active');
+          }
+     }
 
      $("#navigation ul li a").on("click",function(x){
           $("#navigation").removeClass('show-mobile-nav');
