@@ -34,13 +34,15 @@
 		padding-top: 50px;
 		margin-bottom: 50px;
 		text-transform: uppercase;
+        padding-top: 80px;
 	}
 
     .site-partners-logo {
         text-align: center;
+        padding-bottom: 80px;
         
         img {
-            width: 130px;
+            width: 100px;
             margin: 20px;
             transition: .3s;
             opacity: .7;

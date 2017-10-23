@@ -4,6 +4,7 @@
 @import "base/_mixins";
 @import "base/_global";
 @import "base/_animation";
+@import "modules/_loader";
 @import "modules/_navigation";
 @import "modules/_hero";
 @import "modules/_services";
