@@ -1,5 +1,11 @@
-.fadeUpImage {
-	animation: fadeInUp;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+@keyframes hero-animation {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+	50% {
+		transform: scale(1.3) rotate(0deg);
+	}
+	100%{
+		transform: scale(1) rotate(0deg);	
+	}
 }

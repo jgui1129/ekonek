@@ -1,6 +1,8 @@
 #services {
 	position: relative;
 	padding: 0 20px;
+	z-index: 500;
+    background: white;
 	
 	select {
 		font-family: 'FontAwesome', 'Raleway';
