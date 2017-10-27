@@ -1,9 +1,26 @@
 #hero {
-	background: url('../../assets/images/hero-background.png');
-	background-position: center;
-	background-size: cover;
 	position: relative;
 	padding: 1px 50px 100px 50px;
+
+	.hero-background {
+/*		background-image: url('../../assets/images/hero-background.png');*/
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		animation: fadeIn 3s;
+		z-index: 499 !important;
+		top:0;
+		bottom: 100px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100% !important;
+	}
+
+	.container {
+		position: relative;
+		z-index: 500;
+	}
 
 	select {
 		font-family: 'FontAwesome', 'Raleway';

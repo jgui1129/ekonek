@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
 	<link rel="shortcut icon" href="assets/images/favicon.ico">
 	<title>Ekonek</title>
@@ -7,9 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
 </head>
-<body>
+<body ng-controller="ekonekController">
 
 
 <div id="cssload-pgloading">
@@ -59,6 +60,17 @@
 
 	<div id="homepage-section"></div>
 	<section id="hero" data-matching-link="#hero-link">
+	<div class="hero-background" id="slider">
+<!-- 		<div class="slider-item"><img src="assets/images/hero-background.png" ></div>
+		<div class="slider-item"><img src="assets/images/hero-background.png" ></div>
+		<div class="slider-item"><img src="assets/images/hero-background.png" ></div> -->
+			
+			<img src="assets/images/hero-background.png" >
+			<img src="assets/images/background-1.jpg" >
+			<img src="assets/images/background-2.jpg" >
+			<img src="assets/images/background-3.jpg" >
+			<img src="assets/images/background-4.jpg" >
+	</div>
 		<div class="container">
 			<div class="welcome-header">
 				<h1>Welcome to Ekonek</h1>
@@ -296,9 +308,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="assets/js/waypoint.js"></script>
+<script src="assets/js/ideal-image-slider.min.js"></script>
 <script src="assets/js/parallax.js"></script>
 <script src="assets/js/smooth-scroll.js"></script>
-<script src="temp/scripts/bundle.js"></script>
+<script src="assets/js/app.js"></script>
 <!-- <script type="text/javascript" src="temp/scripts/bundle.js"></script> -->
 </body>
 </html>
