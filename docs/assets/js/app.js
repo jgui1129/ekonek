@@ -6,7 +6,7 @@ angular.module('app',[])
 
    var slider = new IdealImageSlider.Slider({
     selector: '#slider',
-    interval: 4000
+    interval: 10000
   });
   slider.start();
 
